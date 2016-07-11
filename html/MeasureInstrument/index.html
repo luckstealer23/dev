@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app="store">
+    <head >
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MeasureInstrument</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+    <header class="w3-container w3-teal">
+
+    <h1 class="w3-myfont">MeasureInstrument</h1>
+    </header>
+    <div class="w3-container w3-padding-large w3-section w3-light-grey ">
+    <div class="w3-container w3-leftbar w3-order-green">
+       <p>Select your MeasureInstrument</p>
+    </div> 
+    <form name="myForm">
+        <input id="FMP30" class="w3-radio" type="radio" name="myRadios" value="FMP30" checked>
+        <label class="w3-validate">FMP30</label>
+
+        <input id="DXS500"class="w3-radio" type="radio" name="myRadios" value="DXS500">
+        <label class="w3-validate">DXS500</label>
+
+        <input id="MGR10"class="w3-radio " type="radio" name="myRadios" value="MGR10">
+        <label class="w3-validate">MGR10</label>
+    </form> 
+    </div>
+    <hr>
+   <div class="w3-container"> 
+        <p class="w3-xxlarge w3-half">Initialize</p>
+        <p class="w3-xxlarge w3-half">Measurements</p>
+    </div>
+    <div class="w3-container">
+        <div class="w3-half w3-border w3-round-xlarge w3-hover-border-blue w3-padding-8">
+            <p id="output_initialize" class=""></p>
+        </div>
+        <div class="w3-half w3-border w3-round-xlarge w3-hover-border-blue w3-padding-8">
+            <p id="output_measurement" class=""></p>
+        </div>
+    </div>
+    <!-- Latest compiled and minified CSS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
+        <script type="text/javascript" src="js/app.js"></script>
+ 
+    </body>
+</html>
